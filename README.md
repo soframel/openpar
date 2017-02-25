@@ -1,4 +1,7 @@
 # openpar
+
+This is a small "side project" that will hopefully one day parser & display some open data about parliaments and other political instances. It does not do much for now... 
+
 This application was generated using JHipster 4.0.5, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.0.5](https://jhipster.github.io/documentation-archive/v4.0.5).
 
 ## Development
