@@ -29,11 +29,14 @@ public class OrganesParser extends OpenDataAbstractParser {
 					OrganeRepository));
 			InputSource source = new InputSource(in);
 			xmlReader.parse(source);
-		} catch (ParserConfigurationException e) {
+		}
+		catch (ParserConfigurationException e) {
 			log.error("ParserConfigurationException " + e.getMessage(), e);
-		} catch (SAXException e) {
+		}
+		catch (SAXException e) {
 			log.error("SAXException " + e.getMessage(), e);
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			log.error("IOException " + e.getMessage(), e);
 		}
 	}

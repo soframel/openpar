@@ -12,11 +12,11 @@ import org.xml.sax.helpers.DefaultHandler;
 public abstract class AbstractContentHandler extends DefaultHandler {
 	protected final Logger log = LoggerFactory.getLogger(this.getClass());
 
-	protected DateTimeFormatter formatter=new DateTimeFormatterBuilder().appendPattern("yyyy-MM-dd").toFormatter();
+	protected DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+			.appendPattern("yyyy-MM-dd").toFormatter();
 
 	protected StringBuffer currentCharacters;
 	protected ArrayDeque<String> namesStack;
-	
 
 	@Override
 	public void characters(char[] ch, int start, int length)
@@ -29,10 +29,10 @@ public abstract class AbstractContentHandler extends DefaultHandler {
 		log.info("Finished parsing XML");
 		namesStack.clear();
 	}
-	
-	protected String removeNewLinesDoubleWhitespaces(String text){
-		String newString=text.replaceAll("\\s+", " ");
-		return newString;
+
+	protected String removeNewLinesDoubleWhitespaces(String text) {
+		String newString = text.replaceAll("\\s+", " ");
+		return newString.trim();
 	}
 
 }

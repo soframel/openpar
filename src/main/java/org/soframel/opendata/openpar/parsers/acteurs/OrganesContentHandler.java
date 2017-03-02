@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.ArrayDeque;
 
 import org.soframel.opendata.openpar.parsers.AbstractContentHandler;
-import org.soframel.opendata.openpar.parsers.acteurs.Organe.CodeType;
 import org.soframel.opendata.openpar.parsers.acteurs.Organe.TypeOrgane;
 import org.soframel.opendata.openpar.repository.OrganeRepository;
 import org.xml.sax.Attributes;
@@ -44,36 +43,47 @@ public class OrganesContentHandler extends AbstractContentHandler {
 		if (localName.equals("organe")) {
 			log.info("inserting Organe " + organe.getUid());
 			OrganeRepository.insert(organe);
-		} else if ("organe".equals(previousElementName)) {
+		}
+		else if ("organe".equals(previousElementName)) {
 			if (localName.equals("uid")) {
 				organe.setUid(currentCharacters.toString());
-			} else if (localName.equals("codeType")) {
-				organe.setCodeType(CodeType.valueOf(currentCharacters
-						.toString()));
-			} else if (localName.equals("libelle")) {
+			}
+			else if (localName.equals("codeType")) {
+				organe.setCodeType(currentCharacters.toString());
+			}
+			else if (localName.equals("libelle")) {
 				organe.setLibelle(currentCharacters.toString());
-			} else if (localName.equals("libelleEdition")) {
+			}
+			else if (localName.equals("libelleEdition")) {
 				organe.setLibelleEdition(removeNewLinesDoubleWhitespaces(currentCharacters
 						.toString()));
-			} else if (localName.equals("libelleAbrege")) {
+			}
+			else if (localName.equals("libelleAbrege")) {
 				organe.setLibelleAbrege(currentCharacters.toString());
-			} else if (localName.equals("libelleAbrev")) {
+			}
+			else if (localName.equals("libelleAbrev")) {
 				organe.setLibelleAbrev(currentCharacters.toString());
-			} else if (localName.equals("regime")) {
+			}
+			else if (localName.equals("regime")) {
 				organe.setRegime(currentCharacters.toString());
-			} else if (localName.equals("legislature")) {
+			}
+			else if (localName.equals("legislature")
+					&& currentCharacters.length() > 0) {
 				organe.setLegislature(Integer.valueOf(currentCharacters
 						.toString()));
 			}
-		} else if ("viMoDe".equals(previousElementName)) {
+		}
+		else if ("viMoDe".equals(previousElementName)) {
 			if (localName.equals("dateDebut") && currentCharacters.length() > 0) {
 				organe.setDateDebut(LocalDate.parse(
 						currentCharacters.toString(), formatter));
-			} else if (localName.equals("dateAgrement")
+			}
+			else if (localName.equals("dateAgrement")
 					&& currentCharacters.length() > 0) {
 				organe.setDateAgrement(LocalDate.parse(
 						currentCharacters.toString(), formatter));
-			} else if (localName.equals("dateFin")
+			}
+			else if (localName.equals("dateFin")
 					&& currentCharacters.length() > 0) {
 				organe.setDateFin(LocalDate.parse(currentCharacters.toString(),
 						formatter));

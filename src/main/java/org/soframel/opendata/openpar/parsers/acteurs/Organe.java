@@ -8,13 +8,9 @@ public class Organe {
 		OrganeParlementaire_Type, OrganeExterne_Type
 	}
 
-	enum CodeType {
-		MISINFO, CONSTITU, MINISTERE
-	}
-
 	private TypeOrgane type;
 	private String uid;
-	private CodeType codeType;
+	private String codeType;
 	private String libelle;
 	private String libelleEdition;
 	private String libelleAbrege;
@@ -41,11 +37,11 @@ public class Organe {
 		this.uid = uid;
 	}
 
-	public CodeType getCodeType() {
+	public String getCodeType() {
 		return codeType;
 	}
 
-	public void setCodeType(CodeType codeType) {
+	public void setCodeType(String codeType) {
 		this.codeType = codeType;
 	}
 

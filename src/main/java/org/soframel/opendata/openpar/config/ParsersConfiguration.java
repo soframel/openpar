@@ -2,6 +2,8 @@ package org.soframel.opendata.openpar.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.soframel.opendata.openpar.parsers.acteurs.ActeursParser;
+import org.soframel.opendata.openpar.parsers.acteurs.OrganesParser;
 import org.soframel.opendata.openpar.parsers.scrutins.ScrutinsParser;
 import org.soframel.opendata.openpar.parsers.scrutins.VotesParser;
 import org.springframework.context.annotation.Bean;
@@ -29,4 +31,17 @@ public class ParsersConfiguration {
 		return parser;
 	}
 
+	@Bean
+	@Description("Acteurs parser")
+	public ActeursParser createActeursParser() {
+		ActeursParser parser = new ActeursParser();
+		return parser;
+	}
+
+	@Bean
+	@Description("Organes parser")
+	public OrganesParser createOrganesParser() {
+		OrganesParser parser = new OrganesParser();
+		return parser;
+	}
 }
