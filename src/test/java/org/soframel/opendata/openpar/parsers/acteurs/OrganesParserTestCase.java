@@ -17,7 +17,8 @@ import org.junit.Test;
 import org.mockito.Mockito;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-import org.soframel.opendata.openpar.parsers.acteurs.Organe.TypeOrgane;
+import org.soframel.opendata.openpar.domain.frpar.Organe;
+import org.soframel.opendata.openpar.domain.frpar.TypeOrgane;
 import org.soframel.opendata.openpar.repository.OrganeRepository;
 
 public class OrganesParserTestCase {

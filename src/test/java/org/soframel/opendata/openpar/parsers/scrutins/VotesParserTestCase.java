@@ -16,7 +16,9 @@ import org.junit.Test;
 import org.mockito.Mockito;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-import org.soframel.opendata.openpar.parsers.scrutins.Vote.CausePositionVote;
+import org.soframel.opendata.openpar.domain.frpar.CausePositionVote;
+import org.soframel.opendata.openpar.domain.frpar.PositionVote;
+import org.soframel.opendata.openpar.domain.frpar.Vote;
 import org.soframel.opendata.openpar.repository.VoteRepository;
 
 public class VotesParserTestCase {

@@ -16,7 +16,9 @@ import org.junit.Test;
 import org.mockito.Mockito;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-import org.soframel.opendata.openpar.parsers.acteurs.Mandat.TypeMandat;
+import org.soframel.opendata.openpar.domain.frpar.Acteur;
+import org.soframel.opendata.openpar.domain.frpar.Mandat;
+import org.soframel.opendata.openpar.domain.frpar.TypeMandat;
 import org.soframel.opendata.openpar.repository.ActeurRepository;
 
 public class ActeursParserTestCase {
@@ -85,7 +87,7 @@ public class ActeursParserTestCase {
 						mandat.getType());
 				assertEquals("PM386050", mandat.getUid());
 				assertEquals(13, mandat.getLegislature());
-				assertEquals("ASSEMBLEE", mandat.getOrgane());
+				assertEquals("ASSEMBLEE", mandat.getTypeOrgane());
 				assertEquals(LocalDate.of(2007, 6, 20), mandat.getDateDebut());
 				assertNull(mandat.getDatePublication());
 				assertEquals(LocalDate.of(2008, 4, 19), mandat.getDateFin());

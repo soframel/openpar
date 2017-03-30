@@ -3,8 +3,9 @@ package org.soframel.opendata.openpar.parsers.acteurs;
 import java.time.LocalDate;
 import java.util.ArrayDeque;
 
+import org.soframel.opendata.openpar.domain.frpar.Organe;
+import org.soframel.opendata.openpar.domain.frpar.TypeOrgane;
 import org.soframel.opendata.openpar.parsers.AbstractContentHandler;
-import org.soframel.opendata.openpar.parsers.acteurs.Organe.TypeOrgane;
 import org.soframel.opendata.openpar.repository.OrganeRepository;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

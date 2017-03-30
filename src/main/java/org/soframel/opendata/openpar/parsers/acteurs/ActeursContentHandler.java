@@ -5,8 +5,10 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.soframel.opendata.openpar.domain.frpar.Acteur;
+import org.soframel.opendata.openpar.domain.frpar.Mandat;
+import org.soframel.opendata.openpar.domain.frpar.TypeMandat;
 import org.soframel.opendata.openpar.parsers.AbstractContentHandler;
-import org.soframel.opendata.openpar.parsers.acteurs.Mandat.TypeMandat;
 import org.soframel.opendata.openpar.repository.ActeurRepository;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -130,7 +132,7 @@ public class ActeursContentHandler extends AbstractContentHandler {
 			}
 			else if (localName.equals("typeOrgane")
 					&& currentCharacters.length() > 0) {
-				mandat.setOrgane(currentCharacters.toString());
+				mandat.setTypeOrgane(currentCharacters.toString());
 			}
 			else if (localName.equals("dateDebut")
 					&& currentCharacters.length() > 0) {

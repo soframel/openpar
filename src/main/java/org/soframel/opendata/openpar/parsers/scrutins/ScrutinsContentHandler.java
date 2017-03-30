@@ -3,9 +3,12 @@ package org.soframel.opendata.openpar.parsers.scrutins;
 import java.time.LocalDate;
 import java.util.ArrayDeque;
 
+import org.soframel.opendata.openpar.domain.frpar.ModePublicationVotes;
+import org.soframel.opendata.openpar.domain.frpar.PositionVote;
+import org.soframel.opendata.openpar.domain.frpar.Scrutin;
+import org.soframel.opendata.openpar.domain.frpar.TypeVote;
+import org.soframel.opendata.openpar.domain.frpar.VotesGroupe;
 import org.soframel.opendata.openpar.parsers.AbstractContentHandler;
-import org.soframel.opendata.openpar.parsers.scrutins.Scrutin.ModePublicationVotes;
-import org.soframel.opendata.openpar.parsers.scrutins.Scrutin.TypeVote;
 import org.soframel.opendata.openpar.repository.ScrutinRepository;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

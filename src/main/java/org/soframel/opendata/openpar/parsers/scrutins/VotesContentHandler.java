@@ -7,10 +7,10 @@ import java.util.ArrayDeque;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.soframel.opendata.openpar.domain.frpar.CausePositionVote;
+import org.soframel.opendata.openpar.domain.frpar.PositionVote;
+import org.soframel.opendata.openpar.domain.frpar.Vote;
 import org.soframel.opendata.openpar.parsers.AbstractContentHandler;
-import org.soframel.opendata.openpar.parsers.scrutins.Scrutin.ModePublicationVotes;
-import org.soframel.opendata.openpar.parsers.scrutins.Scrutin.TypeVote;
-import org.soframel.opendata.openpar.parsers.scrutins.Vote.CausePositionVote;
 import org.soframel.opendata.openpar.repository.ScrutinRepository;
 import org.soframel.opendata.openpar.repository.VoteRepository;
 import org.xml.sax.Attributes;

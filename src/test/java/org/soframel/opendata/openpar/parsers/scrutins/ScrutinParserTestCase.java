@@ -15,8 +15,11 @@ import org.junit.Test;
 import org.mockito.Mockito;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-import org.soframel.opendata.openpar.parsers.scrutins.Scrutin.ModePublicationVotes;
-import org.soframel.opendata.openpar.parsers.scrutins.Scrutin.TypeVote;
+import org.soframel.opendata.openpar.domain.frpar.ModePublicationVotes;
+import org.soframel.opendata.openpar.domain.frpar.PositionVote;
+import org.soframel.opendata.openpar.domain.frpar.Scrutin;
+import org.soframel.opendata.openpar.domain.frpar.TypeVote;
+import org.soframel.opendata.openpar.domain.frpar.VotesGroupe;
 import org.soframel.opendata.openpar.repository.ScrutinRepository;
 
 public class ScrutinParserTestCase {
