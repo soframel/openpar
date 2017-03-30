@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?><uml:Model xmlns:uml="http://www.omg.org/spec/UML/20110701" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="_eZpBkAUEEeempOzi8UNGjA" name="openpar">
+  <eAnnotations xmi:id="_eZpBkQUEEeempOzi8UNGjA" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_eZpooAUEEeempOzi8UNGjA" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_eZpooQUEEeempOzi8UNGjA" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Package" xmi:id="_eZpoogUEEeempOzi8UNGjA" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_eZpoowUEEeempOzi8UNGjA" name="soframel">
+      <packagedElement xmi:type="uml:Package" xmi:id="_eZpopAUEEeempOzi8UNGjA" name="opendata">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eZpopQUEEeempOzi8UNGjA" name="openpar">
+          <packagedElement xmi:type="uml:Package" xmi:id="_eZpopgUEEeempOzi8UNGjA" name="domain">
+            <packagedElement xmi:type="uml:Package" xmi:id="_eZpopwUEEeempOzi8UNGjA" name="frpar">
+              <packagedElement xmi:type="uml:Class" xmi:id="_eZpoqAUEEeempOzi8UNGjA" name="Acteur">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpoqQUEEeempOzi8UNGjA" name="mandats" visibility="private" type="_eZpovgUEEeempOzi8UNGjA" association="_eZpouAUEEeempOzi8UNGjA">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZpoqgUEEeempOzi8UNGjA" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpoqwUEEeempOzi8UNGjA" name="uid" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZporAUEEeempOzi8UNGjA" name="civilite" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZporQUEEeempOzi8UNGjA" name="prenom" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZporgUEEeempOzi8UNGjA" name="nom" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZporwUEEeempOzi8UNGjA" name="alpha" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZposAUEEeempOzi8UNGjA" name="dateNaissance" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZposQUEEeempOzi8UNGjA" name="villeNaissance" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZposgUEEeempOzi8UNGjA" name="depNaissance" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZposwUEEeempOzi8UNGjA" name="paysNaissance" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpotAUEEeempOzi8UNGjA" name="dateDeces" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpotQUEEeempOzi8UNGjA" name="profession" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpotgUEEeempOzi8UNGjA" name="catSocPro" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpotwUEEeempOzi8UNGjA" name="famSocPro" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_eZpouAUEEeempOzi8UNGjA" memberEnd="_eZpoqQUEEeempOzi8UNGjA _eZpouQUEEeempOzi8UNGjA">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_eZpouQUEEeempOzi8UNGjA" visibility="public" type="_eZpoqAUEEeempOzi8UNGjA" association="_eZpouAUEEeempOzi8UNGjA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_eZpougUEEeempOzi8UNGjA" name="CausePositionVote">
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpouwUEEeempOzi8UNGjA" name="MG"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpovAUEEeempOzi8UNGjA" name="PSE"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpovQUEEeempOzi8UNGjA" name="PAN"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eZpovgUEEeempOzi8UNGjA" name="Mandat">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpovwUEEeempOzi8UNGjA" name="type" visibility="private" type="_eZppAgUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpowAUEEeempOzi8UNGjA" name="uid" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpowQUEEeempOzi8UNGjA" name="legislature" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpowgUEEeempOzi8UNGjA" name="typeOrgane" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpowwUEEeempOzi8UNGjA" name="dateDebut" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpoxAUEEeempOzi8UNGjA" name="datePublication" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpoxQUEEeempOzi8UNGjA" name="dateFin" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpoxgUEEeempOzi8UNGjA" name="qualite" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpoxwUEEeempOzi8UNGjA" name="organesRef" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZpoyAUEEeempOzi8UNGjA" value="*"/>
+                </ownedAttribute>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_eZpoyQUEEeempOzi8UNGjA" name="toString" visibility="public">
+                  <ownedParameter xmi:id="_eZpoygUEEeempOzi8UNGjA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZpoywUEEeempOzi8UNGjA" value="1"/>
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZpozAUEEeempOzi8UNGjA" value="1"/>
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_eZpozQUEEeempOzi8UNGjA" value=""/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_eZpozgUEEeempOzi8UNGjA" name="ModePublicationVotes">
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpozwUEEeempOzi8UNGjA" name="DecompteNominatif"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpo0AUEEeempOzi8UNGjA" name="DecompteDissidentsPositionGroupe"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eZpo0QUEEeempOzi8UNGjA" name="Organe">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo0gUEEeempOzi8UNGjA" name="uid" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo0wUEEeempOzi8UNGjA" name="codeType" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo1AUEEeempOzi8UNGjA" name="libelle" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo1QUEEeempOzi8UNGjA" name="libelleEdition" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo1gUEEeempOzi8UNGjA" name="libelleAbrege" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo1wUEEeempOzi8UNGjA" name="libelleAbrev" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo2AUEEeempOzi8UNGjA" name="dateDebut" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo2QUEEeempOzi8UNGjA" name="dateAgrement" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo2gUEEeempOzi8UNGjA" name="dateFin" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo2wUEEeempOzi8UNGjA" name="regime" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo3AUEEeempOzi8UNGjA" name="legislature" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo3QUEEeempOzi8UNGjA" name="type" visibility="private" type="_eZppBwUEEeempOzi8UNGjA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_eZpo3gUEEeempOzi8UNGjA" name="toString" visibility="public">
+                  <ownedParameter xmi:id="_eZpo3wUEEeempOzi8UNGjA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZpo4AUEEeempOzi8UNGjA" value="1"/>
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZpo4QUEEeempOzi8UNGjA" value="1"/>
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_eZpo4gUEEeempOzi8UNGjA" value=""/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_eZpo4wUEEeempOzi8UNGjA" name="PositionVote">
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpo5AUEEeempOzi8UNGjA" name="POUR"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpo5QUEEeempOzi8UNGjA" name="CONTRE"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpo5gUEEeempOzi8UNGjA" name="ABSTENTION"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZpo5wUEEeempOzi8UNGjA" name="NONVOTANT"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eZpo6AUEEeempOzi8UNGjA" name="Scrutin">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo6QUEEeempOzi8UNGjA" name="votesGroupes" visibility="private" type="_eZppFgUEEeempOzi8UNGjA" association="_eZppAAUEEeempOzi8UNGjA">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZpo6gUEEeempOzi8UNGjA" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo6wUEEeempOzi8UNGjA" name="uid" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo7AUEEeempOzi8UNGjA" name="organeRef" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo7QUEEeempOzi8UNGjA" name="dateScrutin" visibility="private" type="_eZppIwUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo7gUEEeempOzi8UNGjA" name="adopte" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Boolean"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo7wUEEeempOzi8UNGjA" name="titre" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo8AUEEeempOzi8UNGjA" name="demandeur" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo8QUEEeempOzi8UNGjA" name="objet" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo8gUEEeempOzi8UNGjA" name="nbVotants" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo8wUEEeempOzi8UNGjA" name="suffragesExprimes" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo9AUEEeempOzi8UNGjA" name="suffragesRequis" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo9QUEEeempOzi8UNGjA" name="votesPour" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo9gUEEeempOzi8UNGjA" name="votesContre" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo9wUEEeempOzi8UNGjA" name="abstention" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo-AUEEeempOzi8UNGjA" name="nonVotants" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo-QUEEeempOzi8UNGjA" name="typeVote" visibility="private" type="_eZppCgUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZpo-gUEEeempOzi8UNGjA" name="modePublicationVotes" visibility="private" type="_eZpozgUEEeempOzi8UNGjA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_eZpo-wUEEeempOzi8UNGjA" name="toString" visibility="public">
+                  <ownedParameter xmi:id="_eZpo_AUEEeempOzi8UNGjA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZpo_QUEEeempOzi8UNGjA" value="1"/>
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZpo_gUEEeempOzi8UNGjA" value="1"/>
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_eZpo_wUEEeempOzi8UNGjA" value=""/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_eZppAAUEEeempOzi8UNGjA" memberEnd="_eZpo6QUEEeempOzi8UNGjA _eZppAQUEEeempOzi8UNGjA">
+                <ownedEnd xmi:type="uml:Property" xmi:id="_eZppAQUEEeempOzi8UNGjA" visibility="public" type="_eZpo6AUEEeempOzi8UNGjA" association="_eZppAAUEEeempOzi8UNGjA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_eZppAgUEEeempOzi8UNGjA" name="TypeMandat">
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppAwUEEeempOzi8UNGjA" name="MandatParlementaire_type"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppBAUEEeempOzi8UNGjA" name="MandatSimple_Type"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppBQUEEeempOzi8UNGjA" name="MandatMission_Type"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppBgUEEeempOzi8UNGjA" name="MandatAvecSuppleant_Type"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_eZppBwUEEeempOzi8UNGjA" name="TypeOrgane">
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppCAUEEeempOzi8UNGjA" name="OrganeParlementaire_Type"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppCQUEEeempOzi8UNGjA" name="OrganeExterne_Type"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_eZppCgUEEeempOzi8UNGjA" name="TypeVote">
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppCwUEEeempOzi8UNGjA" name="SAT"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppDAUEEeempOzi8UNGjA" name="SPO"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppDQUEEeempOzi8UNGjA" name="SPS"/>
+                <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eZppDgUEEeempOzi8UNGjA" name="MOC"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eZppDwUEEeempOzi8UNGjA" name="Vote">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppEAUEEeempOzi8UNGjA" name="voteId" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppEQUEEeempOzi8UNGjA" name="acteurRef" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppEgUEEeempOzi8UNGjA" name="mandatRef" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppEwUEEeempOzi8UNGjA" name="scrutinId" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppFAUEEeempOzi8UNGjA" name="vote" visibility="private" type="_eZpo4wUEEeempOzi8UNGjA"/>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppFQUEEeempOzi8UNGjA" name="causePositionVote" visibility="private" type="_eZpougUEEeempOzi8UNGjA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_eZppFgUEEeempOzi8UNGjA" name="VotesGroupe">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppFwUEEeempOzi8UNGjA" name="organeRef" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppGAUEEeempOzi8UNGjA" name="nbMembresGroupe" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppGQUEEeempOzi8UNGjA" name="votesPour" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppGgUEEeempOzi8UNGjA" name="votesContre" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppGwUEEeempOzi8UNGjA" name="nbAbstentions" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppHAUEEeempOzi8UNGjA" name="nbNonVotants" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_eZppHQUEEeempOzi8UNGjA" name="positionMajoritaire" visibility="private" type="_eZpo4wUEEeempOzi8UNGjA"/>
+                <ownedOperation xmi:type="uml:Operation" xmi:id="_eZppHgUEEeempOzi8UNGjA" name="toString" visibility="public">
+                  <ownedParameter xmi:id="_eZppHwUEEeempOzi8UNGjA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZppIAUEEeempOzi8UNGjA" value="1"/>
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZppIQUEEeempOzi8UNGjA" value="1"/>
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_eZppIgUEEeempOzi8UNGjA" value=""/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_eZppIwUEEeempOzi8UNGjA" name="LocalDate"/>
+</uml:Model>
